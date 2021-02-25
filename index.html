@@ -1,78 +1,147 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
-  <body>
-    <main id="main-doc">
-      <nav id="navbar">
-        <header>
-          <a href="#1" class="nav-link" ></a>
-          <a href="#2" class="nav-link" ></a>
-          <a href="#3" class="nav-link" ></a>
-          <a href="#4" class="nav-link" ></a>
-        </header>
-      </nav>
-       <section class="main-section" id="x1">
-          <header>
-          </header>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-          <p></p>
-       </section>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>
+        <h2>SQL</h2>
+        <a href="#Basic concepts_of_SQL" class="nav-link" >Basic concepts of SQL</a>
+        <a href="#What_is _SQL" class="nav-link" >What is SQL</a>
+        <a href="#SQL_in Your_Web_Site" class="nav-link" >SQL in Your Web Site</a>
+        <a href="#RDBMS" class="nav-link" >RDBMS</a>
+        <a href="SQL_Syntax" class="nav-link" >SQL Syntax</a>
+        <a href="#" class="nav-link" ></a>
+        <a href="#" class="nav-link" ></a>
+        <a href="#" class="nav-link" ></a>
+      </header>
+    </nav>
+    <div class="container">
+      <section class="main-section" id="Basic concepts_of_SQL">
+        <h2>
+          Basic concepts of SQL
+        </h2>
 
-       <section class="main-section" id="x2">
-          <header>
-          </header>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-          <p></p>
-       </section>
-       <section class="main-section" id="x3">
-          <header>
-          </header>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-          <p></p>
-       </section>
+        <p>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.<br><br> <strong>SQL is a standard language for storing, manipulating and retrieving data in databases.</strong>
+        </p>
+      </section>
 
-       <section class="main-section" id="x4">
-          <header>
-          </header>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-          <p></p>
-       </section>
+      <section class="main-section" id="What_is _SQL">
+        <h2>
+          What is SQL
+        </h2>
+        <p>To build a web site that shows data from a database, you will need:</p>
+        <ul>
+          <li>An RDBMS database program (i.e. MS Access, SQL Server, MySQL)</li>
+          <li>To use a server-side scripting language, like PHP or ASP</li>
+          <li>To use SQL to get the data you want</li>
+          <li>To use HTML / CSS to style the page</li>
+        </ul>
+        <p></p>
+      </section>
+      <section class="main-section" id="SQL_in Your_Web_Site">
+        <h2>
+          SQL in Your Web Site
+        </h2>
+        <p>To build a web site that shows data from a database, you will need:</p>
+        <ul>
+          <li>An RDBMS database program (i.e. MS Access, SQL Server, MySQL)</li>
+          <li>To use a server-side scripting language, like PHP or ASP</li>
+          <li>To use SQL to get the data you want</li>
+          <li>+To use HTML / CSS to style the page</li>
+        </ul>
+      </section>
 
-       <section class="main-section" id="x5">
-          <header>
-          </header>
-          <p></p>
-          <code></code>
-          <ul>
-            <li></li>
-          </ul>
-          <p></p>
-       </section>
+      <section class="main-section" id="RDBMS">
+        <h2>
+          RDBMS
+        </h2>
+        <p>RDBMS stands for Relational Database Management System.<br><br>
+          RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.<br><br>
+          The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.
+        </p>
+      </section>
+
+      <section class="main-section" id="SQL_Syntax">
+        <h2>
+          SQL Syntax
+        </h2>
+        <p>The SQL language is subdivided into several language elements, including:</p>
+        <ul>
+          <li>Clauses, which are constituent components of statements and queries. (In some cases, these are optional.)</li>
+          <li>Expressions, which can produce either scalar values, or tables consisting of columns and rows of data.</li>
+          <li>Predicates, which specify conditions that can be evaluated to SQL three-valued logic (3VL) (true/false/unknown) or Boolean truth values and are used to limit the effects of statements and queries, or to change program flow. </li>
+          <li>Queries, which retrieve the data based on specific criteria. This is an important element of SQL.</li>
+          <li>Statements, which may have a persistent effect on schemata and data, or may control transactions, program flow, connections, sessions, or diagnostics.</li>
+        </ul>
+        <p></p>
+      </section>
+      <section class="main-section" id="SQL_Statements">
+        <h2>
+          SQL Statements
+        </h2>
+        <p>Most of the actions you need to perform on a database are done with SQL statements. <br><br>
+The following SQL statement selects all the records in the "Customers" table:<br> <strong>Example</strong>
+</p>
+
+        <code>SELECT * FROM Customers;</code>
+
+      </section>
+      <section class="main-section" id="Semicolon_after_Statements">
+        <h2>
+          Semicolon after Statements
+        </h2>
+        <p>Some database systems require a semicolon at the end of each SQL statement.<br><br>
+Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.<br><br>
+In this tutorial, we will use semicolon at the end of each SQL statement.
+</p>
+      </section>
+      <section class="main-section" id="Most_Important_SQL_Commands">
+        <h2>
+          Most Important SQL Commands
+        </h2>
+        <ul>
+          <li>SELECT - extracts data from a database</li>
+          <li>UPDATE- updates data in a database</li>
+          <li>DELETE - deletes data from a database</li>
+          <li>INSERT INTO - inserts new data into a database</li>
+          <li>CREATE DATABASE - creates a new database</li>
+          <li>ALTER DATABASE - modifies a database</li>
+          <li>DROP TABLE - deletes a table</li>
+          <li>CREATE INDEX - creates an index (search key)</li>
+          <li>DROP INDEX - deletes an index</li>
+        </ul>
+        <p></p>
+      </section>
+
+    </section>
+    <section class="main-section" id="Most_Important_SQL_Commands">
+      <h2>
+        Most Important SQL Commands
+      </h2>
+      <ul>
+        <li>SELECT - extracts data from a database</li>
+        <li>UPDATE- updates data in a database</li>
+        <li>DELETE - deletes data from a database</li>
+        <li>INSERT INTO - inserts new data into a database</li>
+        <li>CREATE DATABASE - creates a new database</li>
+        <li>ALTER DATABASE - modifies a database</li>
+        <li>DROP TABLE - deletes a table</li>
+        <li>CREATE INDEX - creates an index (search key)</li>
+        <li>DROP INDEX - deletes an index</li>
+      </ul>
+      <p></p>
+    </section>
+
+    </div>
 
 
 
-    </main>
+  </main>
 
-  </body>
+</body>
 </html>
