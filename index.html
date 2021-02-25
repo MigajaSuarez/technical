@@ -14,10 +14,12 @@
         <a href="#What_is _SQL" class="nav-link" >What is SQL</a>
         <a href="#SQL_in Your_Web_Site" class="nav-link" >SQL in Your Web Site</a>
         <a href="#RDBMS" class="nav-link" >RDBMS</a>
-        <a href="SQL_Syntax" class="nav-link" >SQL Syntax</a>
-        <a href="#" class="nav-link" ></a>
-        <a href="#" class="nav-link" ></a>
-        <a href="#" class="nav-link" ></a>
+        <a href="#SQL_Syntax" class="nav-link" >SQL Syntax</a>
+        <a href="#SQL_Statements" class="nav-link" >SQL Statements</a>
+        <a href="#Semicolon_after_Statements" class="nav-link" >Semicolon after Statements</a>
+        <a href="#Most_Important_SQL_Commands" class="nav-link" >Most Important SQL Commands</a>
+        <a href="#SELECT" class="nav-link" >SELECT</a>
+        <a href="#DISTINCT" class="nav-link" >DISTINCT</a>
       </header>
     </nav>
     <div class="container">
@@ -96,8 +98,7 @@ The following SQL statement selects all the records in the "Customers" table:<br
           Semicolon after Statements
         </h2>
         <p>Some database systems require a semicolon at the end of each SQL statement.<br><br>
-Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.<br><br>
-In this tutorial, we will use semicolon at the end of each SQL statement.
+Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
 </p>
       </section>
       <section class="main-section" id="Most_Important_SQL_Commands">
@@ -117,25 +118,28 @@ In this tutorial, we will use semicolon at the end of each SQL statement.
         </ul>
         <p></p>
       </section>
+      <section class="main-section" id="SELECT">
+        <h2>
+          SELECT
+        </h2>
+        <code>SELECT column1, column2, ...<br>
+  FROM table_name;
+  </code>
+        <p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax:</p>
+        <code>SELECT * FROM table_name;</code>
+      </section>
+      <section class="main-section" id="DISTINCT">
+        <h2>
+          DISTINCT
+        </h2>
 
-    </section>
-    <section class="main-section" id="Most_Important_SQL_Commands">
-      <h2>
-        Most Important SQL Commands
-      </h2>
-      <ul>
-        <li>SELECT - extracts data from a database</li>
-        <li>UPDATE- updates data in a database</li>
-        <li>DELETE - deletes data from a database</li>
-        <li>INSERT INTO - inserts new data into a database</li>
-        <li>CREATE DATABASE - creates a new database</li>
-        <li>ALTER DATABASE - modifies a database</li>
-        <li>DROP TABLE - deletes a table</li>
-        <li>CREATE INDEX - creates an index (search key)</li>
-        <li>DROP INDEX - deletes an index</li>
-      </ul>
-      <p></p>
-    </section>
+        <p>The SELECT DISTINCT statement is used to return only distinct (different) values. <br>
+  Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.<br> <strong>SELECT DISTINCT Syntax</strong>
+  </p>
+        <code>SELECT DISTINCT column1, column2, ...<br>
+  FROM table_name;
+  </code>
+      </section>
 
     </div>
 
