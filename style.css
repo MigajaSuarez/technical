@@ -1,0 +1,66 @@
+
+body{
+  background-image: url("https://image.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg");
+  font-family: calibri, helvetica;
+  color: #003138;
+  line-height: 1.5;
+}
+a{
+  display: block;
+  color: #003138;
+  text-decoration: none;
+  padding: : 7px;
+  background-color: lightgray;
+}
+h1{
+  display: block;
+  color: #003138;
+  text-align: center;
+}
+code{
+  display: block;
+  max-width: 300px;
+  background-color: white;
+}
+.head{
+  padding: 1vw;
+  display: block;
+  background-color: lightgray;
+  border: black;
+}
+.nav-link{
+  border-style: solid;
+  border-width: thin;
+  border-bottom: black;
+  border-left: none;
+  border-right: none;
+}
+.main-section{
+  background-color: hsla(360, 0%, 90%, 0.6);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#main-doc{
+  text-align: justify;
+  margin:0;
+  padding:auto;
+  width: calc(100% - 270px);
+  height: auto;
+  position: absolute;
+  left: 250px;
+  top: 10px;
+
+}
+#navbar{
+  display:flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-right: 3vw;
+  width: 230px;
+  justify-content: flex-start;
+  line-height: 3;
+  position: fixed;
+  top:0px;
+  left: 0px;
+
+}

@@ -8,8 +8,8 @@
 <body>
   <main id="main-doc">
     <nav id="navbar">
-      <header>
-        <h2>SQL</h2>
+      <div class="head">
+        <h1>SQL</h1>
         <a href="#Basic concepts_of_SQL" class="nav-link" >Basic concepts of SQL</a>
         <a href="#What_is _SQL" class="nav-link" >What is SQL</a>
         <a href="#SQL_in Your_Web_Site" class="nav-link" >SQL in Your Web Site</a>
@@ -20,7 +20,10 @@
         <a href="#Most_Important_SQL_Commands" class="nav-link" >Most Important SQL Commands</a>
         <a href="#SELECT" class="nav-link" >SELECT</a>
         <a href="#DISTINCT" class="nav-link" >DISTINCT</a>
-      </header>
+        <a href="#WHERE_Clause" class="nav-link" >WHERE_Clause</a>
+
+      </div>
+
     </nav>
     <div class="container">
       <section class="main-section" id="Basic concepts_of_SQL">
@@ -28,10 +31,10 @@
           Basic concepts of SQL
         </h2>
 
-        <p>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.<br><br> <strong>SQL is a standard language for storing, manipulating and retrieving data in databases.</strong>
+        <p>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.<br><br> <strong>SQL is a standard language for storing, manipulating and retrieving data in databases.</strong><br>
         </p>
+        <br>
       </section>
-
       <section class="main-section" id="What_is _SQL">
         <h2>
           What is SQL
@@ -42,7 +45,7 @@
           <li>To use a server-side scripting language, like PHP or ASP</li>
           <li>To use SQL to get the data you want</li>
           <li>To use HTML / CSS to style the page</li>
-        </ul>
+        </ul><br>
         <p></p>
       </section>
       <section class="main-section" id="SQL_in Your_Web_Site">
@@ -55,9 +58,8 @@
           <li>To use a server-side scripting language, like PHP or ASP</li>
           <li>To use SQL to get the data you want</li>
           <li>+To use HTML / CSS to style the page</li>
-        </ul>
+        </ul><br>
       </section>
-
       <section class="main-section" id="RDBMS">
         <h2>
           RDBMS
@@ -65,9 +67,8 @@
         <p>RDBMS stands for Relational Database Management System.<br><br>
           RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.<br><br>
           The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.
-        </p>
+        </p><br>
       </section>
-
       <section class="main-section" id="SQL_Syntax">
         <h2>
           SQL Syntax
@@ -79,7 +80,7 @@
           <li>Predicates, which specify conditions that can be evaluated to SQL three-valued logic (3VL) (true/false/unknown) or Boolean truth values and are used to limit the effects of statements and queries, or to change program flow. </li>
           <li>Queries, which retrieve the data based on specific criteria. This is an important element of SQL.</li>
           <li>Statements, which may have a persistent effect on schemata and data, or may control transactions, program flow, connections, sessions, or diagnostics.</li>
-        </ul>
+        </ul><br>
         <p></p>
       </section>
       <section class="main-section" id="SQL_Statements">
@@ -87,19 +88,18 @@
           SQL Statements
         </h2>
         <p>Most of the actions you need to perform on a database are done with SQL statements. <br><br>
-The following SQL statement selects all the records in the "Customers" table:<br> <strong>Example</strong>
-</p>
-
+          The following SQL statement selects all the records in the "Customers" table:<br> <strong>Example</strong>
+        </p>
         <code>SELECT * FROM Customers;</code>
-
+        <br>
       </section>
       <section class="main-section" id="Semicolon_after_Statements">
         <h2>
           Semicolon after Statements
         </h2>
         <p>Some database systems require a semicolon at the end of each SQL statement.<br><br>
-Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
-</p>
+          Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
+        </p><br>
       </section>
       <section class="main-section" id="Most_Important_SQL_Commands">
         <h2>
@@ -115,18 +115,18 @@ Semicolon is the standard way to separate each SQL statement in database systems
           <li>DROP TABLE - deletes a table</li>
           <li>CREATE INDEX - creates an index (search key)</li>
           <li>DROP INDEX - deletes an index</li>
-        </ul>
-        <p></p>
+        </ul><br>
       </section>
       <section class="main-section" id="SELECT">
         <h2>
           SELECT
         </h2>
         <code>SELECT column1, column2, ...<br>
-  FROM table_name;
-  </code>
+          FROM table_name;
+        </code>
         <p>Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax:</p>
         <code>SELECT * FROM table_name;</code>
+        <br>
       </section>
       <section class="main-section" id="DISTINCT">
         <h2>
@@ -134,18 +134,34 @@ Semicolon is the standard way to separate each SQL statement in database systems
         </h2>
 
         <p>The SELECT DISTINCT statement is used to return only distinct (different) values. <br>
-  Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.<br> <strong>SELECT DISTINCT Syntax</strong>
-  </p>
+          Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.<br> <strong>SELECT DISTINCT Syntax</strong>
+        </p>
         <code>SELECT DISTINCT column1, column2, ...<br>
-  FROM table_name;
-  </code>
+          FROM table_name;
+        </code>
+        <br>
       </section>
+      <section class="main-section" id="WHERE_Clause">
+        <h2>
+          WHERE Clause
+        </h2>
 
-    </div>
+        <p>TThe WHERE clause is used to filter records.
 
+          The WHERE clause is used to extract only those records that fulfill a specified condition.<br><br> <strong>SELECT DISTINCT Syntax</strong>
+        </p>
+        <code>SELECT column1, column2, ...
+          FROM table_name
+          WHERE condition;
+        </code>
+        <p>Example</p>
+        <code>SELECT * FROM Customers <br>
+          WHERE Country='Mexico';</code>
+          <br>
+        </section>
+      </div>
+      <br>
+    </main>
 
-
-  </main>
-
-</body>
-</html>
+  </body>
+  </html>
